@@ -1,0 +1,8 @@
+{
+    "name": "ariesdelossantos/moneris",
+    "description": "Unified PHP SDK for Moneris",
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*"
+    }
+}

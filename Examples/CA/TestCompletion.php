@@ -2,12 +2,12 @@
 
 require "../../mpgClasses.php";
 
-$store_id='store5';
-$api_token='yesguy';
-$orderid='ord-150816-11:55:18';
-$txnnumber='117735-0_10';
+$store_id='monca03650';
+$api_token='7Yw0MPTlhjBRcZiE6837';
+$orderid='ord-290824-5:27:32';
+$txnnumber='16204-0_879';
 
-$compamount='1.00';
+$compamount='200.00';
 $dynamic_descriptor='123';
 
 $ship_indicator = "F"; //optional
@@ -28,7 +28,6 @@ $txnArray=array('type'=>'completion',
 ## step 1.
 
 $mpgTxn = new mpgTransaction($txnArray);
-
 
 ## step 3) create a mpgRequest object passing the transaction object created
 ## in step 2
@@ -61,15 +60,5 @@ print("\nTransTime = " . $mpgResponse->getTransTime());
 print("\nTicket = " . $mpgResponse->getTicket());
 print("\nTimedOut = " . $mpgResponse->getTimedOut());
 print("\nSourcePanLast4 = " . $mpgResponse->getSourcePanLast4());
-
-// $installmentResults = $mpgResponse->getInstallmentResults();
-
-// print("\nPlanId = " . $installmentResults->getPlanId());
-// print("\nPlanIDRef = " . $installmentResults->getPlanIDRef());
-// print("\nTacVersion = " . $installmentResults->getTacVersion());
-// print("\nPlanAcceptanceId = " . $installmentResults->getPlanAcceptanceId());
-// print("\nPlanStatus = " . $installmentResults->getPlanStatus()); 
-// print("\nPlanResponse = " . $installmentResults->getPlanResponse());
-
 ?>
 
